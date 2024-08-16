@@ -40,7 +40,7 @@ Copilot チャットでコードが生成されたら、コードにカーソル
 |`Ctrl` + `Alt` + `i`|チャットビューの表示|
 |`Ctrl` + `Shift` + `i`|クイックチャットの表示|
 
-### Challenge3: 既存コードの補完
+### Challenge 3: 既存コードの補完
 
 既存のコードはフィールドのみ定義されています。このコードに Setter, Getter, それと toStoring メソッドを追加します。
 
@@ -57,6 +57,14 @@ Setter, Getter 及び toString メソッドを追加してください。
 |キー操作|内容|
 |-------|----|
 |`Ctrl` + `i`|インラインチャットの表示|
+
+### Challenge 4: 既存コードからのテストコード生成
+
+Challenge 4 でロジックを補完し作成したコードからテストコードを作成します。
+コードを右クリックし、`Copilot` -> `Generate Tests` を選択します。
+
+![alt text](images/image-3.png)
+![alt text](images/image-4.png)
 
 ## Demo
 
