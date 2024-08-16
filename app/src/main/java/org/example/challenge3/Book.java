@@ -19,7 +19,7 @@ public class Book {
         this.isbn = isbn;
         this.price = price;
     }
-    
+
     // Setter methods
     public void setTitle(String title) {
         this.title = title;
