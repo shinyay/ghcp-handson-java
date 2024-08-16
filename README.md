@@ -1,6 +1,22 @@
-# Title
+# GitHub Copilot Workshop (in progress...)
 
 ## Description
+
+### Challenge 1: コード生成
+
+予め与えられたプロンプトを使ってコードを生成します。
+
+- [Chalenge 1 コード](./app/src/main/java/org/example/challenge1/HelloCopilot.java)
+
+#### Tips: コード候補に対するショートカット
+|キー操作|内容|
+|-------|----|
+|`Tab`|候補の受け入れ|
+|`Esc`|候補の拒否|
+|`Ctrl` + `→`|候補を単語レベルで受け入れ|
+|`Alt` + `]`|次の候補の表示|
+|`Alt` + `[`|前の候補の表示|
+|`Ctrl` + `Enter`|全ての候補の表示|
 
 ## Demo
 
