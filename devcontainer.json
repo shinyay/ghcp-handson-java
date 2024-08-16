@@ -31,16 +31,36 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "java.home": "/usr/local/openjdk-11",
         "java.configuration.updateBuildConfiguration": "automatic",
         "java.format.settings.url": ".vscode/java-formatter.xml",
         "java.format.settings.profile": "GoogleStyle",
+        "java.import.gradle.enabled": true,
+        "java.import.maven.enabled": true,
+        "java.project.importOnFirstTimeStartup": "auto",
+        "java.project.importOnStartup": "auto",
+        "java.project.updateImportsOnFileRename.enabled": "auto",
+        "java.project.updateImportsOnFileRename.fileGlob": "auto",
+        "java.project.updateImportsOnFileRename.trigger": "auto",
+        "java.project.updateImportsOnFileSave.enabled": "auto",
+        "java.project.updateImportsOnFileSave.trigger": "auto",
+        "java.project.updateImportsOnPaste.enabled": "auto",
+        "java.project.updateImportsOnPaste.trigger": "auto",
+        "java.project.updateImportsOnPaste.fileGlob": "auto",
+        "java.project.updateImportsOnPaste.excludedFiles": "auto",
+        "java.project.updateImportsOnPaste.excludedFolders": "auto",
+        "java.project.updateImportsOnPaste.excludedGlobs": "auto",
+        "java.project.updateImportsOnPaste.excludedFileGlobs": "auto",
+        "java.project.updateImportsOnPaste.excludedFolderGlobs": "auto",
+        "java.project.updateImportsOnPaste.excludedGlobPatterns": "auto",
+        "java.project.updateImportsOnPaste.excludedFileGlobPatterns": "auto",
+        "java.project.updateImportsOnPaste.excludedFolderGlobPatterns": "auto",
         "extensions": [
           "vscjava.vscode-java-pack",
           "redhat.java",
           "vscjava.vscode-maven",
           "vscjava.vscode-java-debug",
-          "vscjava.vscode-java-test"
+          "vscjava.vscode-java-test",
+          "vscjava.vscode-java-dependency"
         ]
       }
     }
