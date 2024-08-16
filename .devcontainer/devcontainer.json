@@ -11,7 +11,10 @@
   // https://containers.dev/features
   "features": {
     "ghcr.io/devcontainers/features/java:1.6.0": {
-      "version": "latest",
+      // 21.0.4-ms (latest)
+      // 17.0.12-ms
+      // 11.0.24-ms
+      // "version": "latest",
       "installMaven": "true",
       "mavenVersion": "latest",
       "installGradle": "true",
@@ -28,10 +31,13 @@
     //   "jdkDistro": "open"
     // }
   },
+  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
-        "vscjava.vscode-java-pack"
+        "vscjava.vscode-java-pack",
+        "GitHub.copilot-chat",
+        "GitHub.copilot"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -43,13 +49,11 @@
         }
       }
     }
-  }
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "java -version",
-  // Configure tool-specific properties.
-  // "customizations": {},
+  "postCreateCommand": "java -version"
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
