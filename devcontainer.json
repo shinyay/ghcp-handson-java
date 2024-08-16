@@ -6,6 +6,7 @@
   "remoteUser": "javadev",
 
   // Dev Container Features
+  // https://containers.dev/features
   "features": {
     "ghcr.io/devcontainers/features/java:1.6.0": {
       "version": "latest",
