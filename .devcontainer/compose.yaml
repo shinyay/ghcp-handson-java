@@ -13,6 +13,7 @@ services:
       - USERNAME=${USERNAME}
       - USER_UID=${USER_UID}
       - USER_GID=${USER_GID}
+      - JAVA_HOME=${JAVA_HOME}
     restart: always
     working_dir: '/workspace'
     tty: true
