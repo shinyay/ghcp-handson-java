@@ -88,6 +88,31 @@ GitHub Copilot にはハッシュ(`#`)を使用したコンテキスト変数が
 |`#terminalLastCommand`|ターミナルで最後に実行したコマンドと結果|
 |`#terminalSelection`|ターミナルの選択箇所|
 
+### Challenge 6: スラッシュコマンドを使用してコードの説明を取得
+
+Challenge 5 で作成したコードの説明を **スラッシュコマンド**を使用してコード内容の説明を取得します。
+
+- [Challenge 6 コード](./app/src/main/java/org/example/challenge5/BookService.java)
+
+コードを右クリックし、`Copilot` -> `Explain This` を選択します。
+
+![alt text](images/image3.png)
+![alt text](images/image5.png)
+
+#### Tips: スラッシュコマンド
+|スラッシュコマンド|内容|
+|----------------|----|
+|`/explain`|コードの説明を取得|
+|`/tests`|選んだコードの単体テストを作成|
+|`/fix`|選んだコードの問題の修正プログラムを提案|
+|`/new`|指定した質問に回答するコードを生成|
+|`/newNotebook`|新しいJupyter Notebookを作成|
+|`search`|VS Code の検索ビューのクエリパラメータを生成コマンドを検索して実行|
+|`runCommand`|VS Code のコマンドを検索して実行|
+|`/clear`|新しいチャットを開始|
+|`/help`|ヘルプ|
+
+
 ## Demo
 
 ## Features
