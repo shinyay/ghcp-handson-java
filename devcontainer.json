@@ -5,7 +5,7 @@
   "workspaceFolder": "/workspace",
   "remoteUser": "javadev",
 
-  // Features for Java
+  // Dev Container Features
   "features": {
     "ghcr.io/devcontainers/features/java:1.6.0": {
       "version": "latest",
