@@ -66,6 +66,28 @@ Challenge 4 でロジックを補完し作成したコードからテストコ�
 ![alt text](images/image-3.png)
 ![alt text](images/image-4.png)
 
+### Challenge 5: コンテキスト変数を用いた複数ファイル情報を用いたコード生成
+
+GitHub Copilot にはハッシュ(`#`)を使用したコンテキスト変数があります。これは、Copilot との会話の中で意図的に伝えたい情報を変数として渡すものです。
+これを利用して複数のファイルの情報をもとにコード生成に活かすことができます。
+
+これまで作成している次のファイルをコンテキスト変数 `#file` を用いて会話にアタッチし、Challenge 3 で作成したエンティティクラスに対して操作を行うサービスクラスを作成します。
+
+以下のようなプロンプトを作成して Copilot と会話をしてみてください。
+
+```text
+@workspace #file:Book.java #file:build.gradle.kts #file:BookService.java 軽量の Java インメモリデータベース、例えば Apache Derby を使用して Book エンティティの内容をデータベースを使って操作するサービスクラスを BookService に実装したい。
+```
+
+#### Tips: コンテキスト変数
+|コンテキスト変数|内容|
+|--------------|----|
+|`#file`|選択したファイル|
+|`#editor`|エディタの表示領域|
+|`#selection`|エディタの選択箇所|
+|`#terminalLastCommand`|ターミナルで最後に実行したコマンドと結果|
+|`#terminalSelection`|ターミナルの選択箇所|
+
 ## Demo
 
 ## Features
