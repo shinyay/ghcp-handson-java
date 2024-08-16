@@ -6,7 +6,7 @@
 
 予め与えられたプロンプトを使ってコードを生成します。
 
-- [Chalenge 1 コード](./app/src/main/java/org/example/challenge1/HelloCopilot.java)
+- [Challenge 1 コード](./app/src/main/java/org/example/challenge1/HelloCopilot.java)
 
 #### Tips: コード候補に対するショートカット
 |キー操作|内容|
@@ -24,7 +24,7 @@
 
 コードの内容説明のサンプルは以下です。
 
-```test
+```tedt
 org.example.challenge2 パッケージに YourIdea.java というクラスを作ります。 このクラスで実施する内容は、現在の日時を日本のローカル時間、アメリカ西海岸時間、そしてイギリス時間を表示します。それぞれの日時の表示フォーマットは、日本式、アメリカ式、ヨーロッパ式とします。
 ```
 
@@ -39,6 +39,24 @@ Copilot チャットでコードが生成されたら、コードにカーソル
 |-------|----|
 |`Ctrl` + `Alt` + `i`|チャットビューの表示|
 |`Ctrl` + `Shift` + `i`|クイックチャットの表示|
+
+### Challenge3: 既存コードの補完
+
+既存のコードはフィールドのみ定義されています。このコードに Setter, Getter, それと toStoring メソッドを追加します。
+
+- [Challenge 2 コード](./app/src/main/java/org/example/challenge3/Book.java)
+
+コードを追加する場所にカーソルを合わせ、インラインチャットの表示を行い、次のプロンプトを参考に入力します。
+
+```text
+Setter, Getter 及び toString メソッドを追加してください。
+```
+
+#### Tips: Copilot インラインチャット表示ショートカット
+
+|キー操作|内容|
+|-------|----|
+|`Ctrl` + `i`|インラインチャットの表示|
 
 ## Demo
 
