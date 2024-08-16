@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-slim-bookworm
+FROM openjdk:23-jdk-slim-bookworm
 
 ARG USERNAME
 ARG USER_UID
