@@ -1,69 +1,51 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
-  "name": "Playground - java",
+  "name": "Playground - Java",
+  // "dockerComposeFile": "compose.yaml",
   "dockerComposeFile": "compose.yaml",
   "service": "playground-java",
   "workspaceFolder": "/workspace",
   "remoteUser": "javadev",
-
-  // Dev Container Features
-  // https://containers.dev/features
   "features": {
-    "ghcr.io/devcontainers/features/java:1.6.0": {
-      "version": "latest",
-      "installMaven": "true",
-      "mavenVersion": "latest",
-      "installGradle": "true",
-      "gradleVersion": "latest"
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "false",
+      "installGradle": "true"
     },
-    "ghcr.io/devcontainers-contrib/features/ki-sdkman:2.0.14": {
+    "ghcr.io/devcontainers-contrib/features/ki-sdkman:2": {
       "version": "latest",
       "jdkVersion": "latest",
       "jdkDistro": "open"
     },
-    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2.0.14": {
+    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {
       "version": "latest",
       "jdkVersion": "latest",
       "jdkDistro": "open"
     }
   },
-
-
   "customizations": {
     "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ],
       "settings": {
-        "java.configuration.updateBuildConfiguration": "automatic",
-        "java.format.settings.url": ".vscode/java-formatter.xml",
-        "java.format.settings.profile": "GoogleStyle",
-        "java.import.gradle.enabled": true,
-        "java.import.maven.enabled": true,
-        "java.project.importOnFirstTimeStartup": "auto",
-        "java.project.importOnStartup": "auto",
-        "java.project.updateImportsOnFileRename.enabled": "auto",
-        "java.project.updateImportsOnFileRename.fileGlob": "auto",
-        "java.project.updateImportsOnFileRename.trigger": "auto",
-        "java.project.updateImportsOnFileSave.enabled": "auto",
-        "java.project.updateImportsOnFileSave.trigger": "auto",
-        "java.project.updateImportsOnPaste.enabled": "auto",
-        "java.project.updateImportsOnPaste.trigger": "auto",
-        "java.project.updateImportsOnPaste.fileGlob": "auto",
-        "java.project.updateImportsOnPaste.excludedFiles": "auto",
-        "java.project.updateImportsOnPaste.excludedFolders": "auto",
-        "java.project.updateImportsOnPaste.excludedGlobs": "auto",
-        "java.project.updateImportsOnPaste.excludedFileGlobs": "auto",
-        "java.project.updateImportsOnPaste.excludedFolderGlobs": "auto",
-        "java.project.updateImportsOnPaste.excludedGlobPatterns": "auto",
-        "java.project.updateImportsOnPaste.excludedFileGlobPatterns": "auto",
-        "java.project.updateImportsOnPaste.excludedFolderGlobPatterns": "auto",
-        "extensions": [
-          "vscjava.vscode-java-pack",
-          "redhat.java",
-          "vscjava.vscode-maven",
-          "vscjava.vscode-java-debug",
-          "vscjava.vscode-java-test",
-          "vscjava.vscode-java-dependency"
-        ]
+        "editor.formatOnSave": true,
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#19549C",
+          "titleBar.activeForeground": "#ffffff",
+          "activityBar.background": "#02A7E3",
+          "activityBar.foreground": "#ffffff"
+        }
       }
     }
-  },
-  "postCreateCommand": "mvn clean install"
+  }
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "java -version",
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
