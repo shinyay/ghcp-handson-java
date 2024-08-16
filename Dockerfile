@@ -4,22 +4,20 @@ FROM openjdk:23-jdk-slim-bookworm
 # Set the working directory
 WORKDIR /workspace
 
-# Install Maven
-RUN apt-get update && \
-    apt-get install -y maven && \
-    rm -rf /var/lib/apt/lists/*
+# Environment variables
+ARG USERNAME
+ARG USER_UID
+ARG USER_GID
 
-# Copy the current directory contents into the container at /workspace
-COPY . /workspace
+# Set Non-Root User
+RUN apt-get update \
+    && groupadd --gid $USER_GID $USERNAME \
+    && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
 
 # Set JAVA_HOME environment variable
 ENV JAVA_HOME /usr/local/openjdk-23
 
-# Expose port 8080
-EXPOSE 8080
-
-# Set user to vscode to avoid using root user
-USER vscode
-
-# Define the command to run the application
-CMD ["mvn", "spring-boot:run"]
+USER $USERNAME
