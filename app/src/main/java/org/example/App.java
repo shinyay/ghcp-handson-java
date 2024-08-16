@@ -1,6 +1,6 @@
 package org.example;
 
-import challenge1.HelloCopilot;
+import org.example.challenge1.*;
 
 public class App {
 
