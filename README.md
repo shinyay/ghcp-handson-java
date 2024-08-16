@@ -96,8 +96,8 @@ Challenge 5 で作成したコードの説明を **スラッシュコマンド**
 
 コードを右クリックし、`Copilot` -> `Explain This` を選択します。
 
-![alt text](images/image3.png)
-![alt text](images/image5.png)
+![alt text](images/image-3.png)
+![alt text](images/image-5.png)
 
 #### Tips: スラッシュコマンド
 |スラッシュコマンド|内容|
