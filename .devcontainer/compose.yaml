@@ -1,23 +1,22 @@
 services:
   playground-java:
-    container_name: playground-java
-    hostname: java
+    container_name: 'playground-java'
+    hostname: 'java'
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        USERNAME: $USERNAME_
-        UID: $UID
-        GID: $GID
+        - USERNAME=${USERNAME}
+        - USER_UID=${USER_UID}
+        - USER_GID=${USER_GID}
+    environment:
+      - USERNAME=${USERNAME}
+      - USER_UID=${USER_UID}
+      - USER_GID=${USER_GID}
     restart: always
-    working_dir: /workspace
+    working_dir: '/workspace'
     tty: true
     volumes:
       - type: bind
         source: .
         target: /workspace
-    # environment:
-    #   - JAVA_HOME=/usr/local/openjdk-23
-    # ports:
-    #   - "8080:8080"
-    # user: vscode
