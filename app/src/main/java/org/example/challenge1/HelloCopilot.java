@@ -8,7 +8,8 @@ public class HelloCopilot {
 
     // メソッドの生成
     // greeting というメソッドを生成し、その中で挨拶を出力ようにします。
-    public void greeting() {}
+    public void greeting() {
+    }
 
 
 }
