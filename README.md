@@ -124,6 +124,14 @@ Challenge 5 で作成したコードの説明を **スラッシュコマンド**
 
 ## Usage
 
+### ワークショップの始め方
+
+このリポジトリの `challenge1` ブランチをクローンします。
+
+```shell
+git clone -b challenge1 git@github.com:shinyay/ghcp-handson-java.git
+```
+
 ## Installation
 
 ## References
